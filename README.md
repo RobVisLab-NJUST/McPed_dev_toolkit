@@ -30,7 +30,7 @@ depth = result[2, 0]
 u = u/depth
 v = v/depth
 ```
-Get the corresponding RGB value
+Get the corresponding RGB value.
 ```javascript
 u, v = get_uv(matrix_in, matrix_out, x, y, z)
 index = int(v) * col + int(u)
@@ -38,7 +38,7 @@ r = color_vec[index, 0]
 g = color_vec[index, 1]
 b = color_vec[index, 2]
 ```
-Color point cloud visualization
+Color point cloud visualization.
 ```javascript
 pcd = o3d.geometry.PointCloud()
 x = np.concatenate((pts, colors), axis=1)
