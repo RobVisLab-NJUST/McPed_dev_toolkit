@@ -19,7 +19,7 @@ matrix_ex = np.array([[extrinsic[0], extrinsic[1], extrinsic[2], extrinsic[3]],
             [extrinsic[8], extrinsic[9], extrinsic[10], extrinsic[11]]])
 ```
 
-where "matrix_in" denotes the internal parameters and "matrix_out" denotes the external parameters,
+Where "matrix_in" denotes the internal parameters and "matrix_out" denotes the external parameters,
 "matrix3" denotes the augmented matrix representation of the point cloud,"u" and "v" denotes the horizontal and vertical 
 coordinates of the points in the point cloud projected into the image, respectively.
 ```javascript
@@ -30,7 +30,7 @@ depth = result[2, 0]
 u = u/depth
 v = v/depth
 ```
-get the corresponding RGB value
+Get the corresponding RGB value
 ```javascript
 u, v = get_uv(matrix_in, matrix_out, x, y, z)
 index = int(v) * col + int(u)
