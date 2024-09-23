@@ -1,2 +1,3 @@
-# McPed
-We propose a multi-modality ground to air cross-view pose estimation dataset for autonomous driving, and the following figure shows its fusion process and fusion results. Tere are eight sets of files in the dataset in the example folder,which contain urban and non-urban scenes examples.
+version https://git-lfs.github.com/spec/v1
+oid sha256:14d24f95077f0ada960552898843d080b4cb12f21f6a2482ef9f545aa96aafac
+size 298
