@@ -23,7 +23,7 @@ Where "matrix_in" denotes the internal parameters and "matrix_out" denotes the e
 "matrix3" denotes the augmented matrix representation of the point cloud,"u" and "v" denotes the horizontal and vertical 
 coordinates of the points in the point cloud projected into the image, respectively.
 ```javascript
-result = np.dot(np.dot(matrix_in, matrix_out), matrix3)
+result = np.dot(np.dot(matrix_in, matrix_ex), matrix3)
 u = result[0, 0]
 v = result[1, 0]
 depth = result[2, 0]
@@ -32,7 +32,7 @@ v = v/depth
 ```
 Get the corresponding RGB value.
 ```javascript
-u, v = get_uv(matrix_in, matrix_out, x, y, z)
+u, v = get_uv(matrix_in, matrix_ex, x, y, z)
 index = int(v) * col + int(u)
 r = color_vec[index, 0]
 g = color_vec[index, 1]
