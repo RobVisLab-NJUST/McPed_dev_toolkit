@@ -3,7 +3,7 @@ We propose a multi-modality ground to air cross-view pose estimation dataset for
 
 ![image](https://github.com/RobVisLab-NJUST/McPed/blob/main/Image%20and%20point%20cloud%20fusion%20process.png)
 
-##color_point.py
+## color_point.py
 This script provides functions for reading calibration parameters,
 Through the internal parameters of the camera and the external parameters between the camera and the LiDAR,
 calculate the relationship between the pixels of the image and the points in the point cloud,
