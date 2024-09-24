@@ -53,3 +53,32 @@ vis.add_geometry(pcd1)
 vis.run()
 vis.destroy_window()
 ```
+
+
+## path_visualization.cpp
+Reading satellite images using the opencv library.
+```javascript
+mat1 = cv::imread("image_path");
+
+```
+Transformation from a mapping coordinate system to a satellite pixel coordinate system.
+```javascript
+trans_x = tf->transforms[0].transform.translation.x;
+trans_y = tf->transforms[0].transform.translation.y;
+trans_x_rot = cos(theta)*(trans_x)-sin(theta)*trans_y;
+trans_y_rot = sin(theta)*(trans_x)+cos(theta)*trans_y;
+tran_x_pixel = trans_x_rot/0.1961;
+tran_y_pixel = trans_y_rot/0.1961;
+x_now-=tran_y_pixel;
+y_now-=tran_x_pixel;
+```
+
+Path Visualization
+```javascript
+cv::circle(mat1,cv::Point2f(x_now,y_now),1,cv::Scalar(255,0,0),1);
+cv::imshow("PointsinImage", mat1);
+cv::waitKey(1);//敲键盘关图片，别直接×
+```
+
+![image] (https://github.com/RobVisLab-NJUST/McPed_dev_toolkit/blob/main/path_visualization.png)
+
