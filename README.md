@@ -85,7 +85,7 @@ x_now-=tran_y_pixel;
 y_now-=tran_x_pixel;
 ```
 
-Path Visualization
+Path Visualization.
 ```javascript
 cv::circle(mat1,cv::Point2f(x_now,y_now),1,cv::Scalar(255,0,0),1);
 cv::imshow("PointsinImage", mat1);
