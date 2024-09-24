@@ -30,6 +30,7 @@ depth = result[2, 0]
 u = u/depth
 v = v/depth
 ```
+
 Get the corresponding RGB value.
 ```javascript
 u, v = get_uv(matrix_in, matrix_ex, x, y, z)
@@ -38,6 +39,17 @@ r = color_vec[index, 0]
 g = color_vec[index, 1]
 b = color_vec[index, 2]
 ```
+
+RGB map ,density map and elevation map
+```javascript
+r_map[int(point_rgb[old_index, 0]), int(point_rgb[old_index, 1])] = color_r
+g_map[int(point_rgb[old_index, 0]), int(point_rgb[old_index, 1])] = color_g
+b_map[int(point_rgb[old_index, 0]), int(point_rgb[old_index, 1])] = color_b
+density_map[int(point_rgb[old_index, 0]), int(point_rgb[old_index, 1])] = np.minimum(1.0, np.log(repeat_time + 1)/np.log(128))
+elevation_map[int(point_rgb[old_index, 0]), int(point_rgb[old_index, 1])] = max_height
+```
+![image](https://github.com/RobVisLab-NJUST/McPed_dev_toolkit/blob/main/map.png)
+
 Color point cloud visualization.
 ```javascript
 pcd = o3d.geometry.PointCloud()
