@@ -77,8 +77,8 @@ Path Visualization
 ```javascript
 cv::circle(mat1,cv::Point2f(x_now,y_now),1,cv::Scalar(255,0,0),1);
 cv::imshow("PointsinImage", mat1);
-cv::waitKey(1);//敲键盘关图片，别直接×
+cv::waitKey(1);
 ```
 
-![image] (https://github.com/RobVisLab-NJUST/McPed_dev_toolkit/blob/main/path_visualization.png)
+![image](https://github.com/RobVisLab-NJUST/McPed_dev_toolkit/blob/main/path_visualization.png)
 
