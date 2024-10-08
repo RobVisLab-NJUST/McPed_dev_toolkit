@@ -94,3 +94,9 @@ cv::waitKey(1);
 
 ![image](https://github.com/RobVisLab-NJUST/McPed_dev_toolkit/blob/main/path_visualization.png)
 
+We give sample data and labeling in different scenarios for the researcher's testing of the dataset.
+
+non-urban scene:https://drive.google.com/file/d/1l2nlhMmvJwlYWJiipmk4JAaeTYoHE5BU/view?usp=sharing
+urban scene:https://drive.google.com/file/d/1YWpqMO_k32dYBMzcXgUfjOrqycsVh2ze/view?usp=drive_link
+
+For the unzip password, please contact:yuanxia@njust.edu.cn
