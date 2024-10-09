@@ -40,6 +40,8 @@ g = color_vec[index, 1]
 b = color_vec[index, 2]
 ```
 
+## save_npy.py
+
 RGB map ,density map and elevation map
 ```javascript
 r_map[int(point_rgb[old_index, 0]), int(point_rgb[old_index, 1])] = color_r
